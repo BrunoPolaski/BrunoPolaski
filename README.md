@@ -5,3 +5,7 @@
   <img src="https://streak-stats.demolab.com?user=BrunoPolaski&locale=en&mode=daily&theme=radical&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=radical&hide_border=true" height="150" alt="languages graph"  />
 </div>
+<div align="center">
+ <img src="https://skillicons.dev/icons?i=dart" height="30" alt="dart logo"  />
+  <img src="https://skillicons.dev/icons?i=flutter" height="30" alt="flutter logo"  />
+</div>
