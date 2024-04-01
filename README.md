@@ -1,4 +1,4 @@
-# Hi there, I'm Bruno! My current objective is to become a software engineer 👋
+# Hi there! 👋
   
   <div>
     <div style="display:flex; flex-direction:row; width:30px;">
