@@ -1,11 +1,12 @@
 <div>
+  <h2 align="center">👋 Hi there, traveler! I'm Bruno Polaski!</h2>
   <div style="display:flex; flex-direction:row; width:30px;">
     <h3>I'm currently a Front-end Dev. using</h3>
     <img src="https://readme-typing-svg.herokuapp.com?lines=VueJS%20|%20SCSS%20|%20Quasar%20|%20Typescript;Flutter%20|%20Dart;&height=30&color=41B883">
   </div>
   <div>
     <h3>And learning Back-end in</h3>
-    <img src="https://readme-typing-svg.herokuapp.com?lines=Golang;Java;TypeScript&height=30&color=41B883">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=Golang&height=30&color=41B883">
   </div>
 </div>
 
