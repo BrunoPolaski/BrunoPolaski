@@ -6,7 +6,7 @@
   </div>
   <div>
     <h3>And learning Back-end in</h3>
-    <img src="https://readme-typing-svg.herokuapp.com?lines=Golang&height=30&color=41B883">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=Go&height=30&color=41B883">
   </div>
 </div>
 
