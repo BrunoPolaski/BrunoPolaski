@@ -3,7 +3,7 @@
   <div align="center"><img src="https://64.media.tumblr.com/2d0af9c90d1b1107313cc20bda01548a/tumblr_outwxnanpp1u79o2lo1_1280.gifv"></div>
   <div align="center">
     <h3>I'm currently a Front-end Dev. using</h3>
-    <img src="https://readme-typing-svg.herokuapp.com?lines=VueJS%20|%20SCSS%20|%20Quasar%20|%20Typescript;Flutter%20|%20Dart;&height=30&color=FFB082">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=VueJS%20|%20Quasar%20|%20Typescript;Flutter%20|%20Dart;&height=30&width=350&color=FFB082">
   </div>
   <div align="center">
     <h3>And learning Back-end in</h3>
