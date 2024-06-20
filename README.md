@@ -7,7 +7,7 @@
   </div>
   <div align="center">
     <h3>And learning Back-end in</h3>
-    <img src="https://readme-typing-svg.herokuapp.com?lines=Go;&height=30&width=30&color=8B6FDC">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=Go%20|%20PHP;&height=30&width=100&color=8B6FDC">
   </div>
 </div>
 
