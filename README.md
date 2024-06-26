@@ -13,8 +13,8 @@
 
 <div align="center">
   <div>
-    <img src="https://streak-stats.demolab.com?user=BrunoPolaski&locale=en&mode=daily&theme=outrun&hide_border=true&border_radius=25&card_width=320" height="150" alt="streak graph"  />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=outrun&hide_border=true&border_radius=25" height="150" alt="languages graph"  />
+    <img src="https://streak-stats.demolab.com?user=BrunoPolaski&locale=en&mode=daily&theme=outrun&hide_border=true&border_radius=25&card_width=400" height="150" alt="Bruno's AWESOME streak graph"  />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&locale=en&hide_title=false&layout=compact&card_width=350&langs_count=6&theme=outrun&hide_border=true&border_radius=25" height="150" alt="Bruno's main languages graph"  />
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BrunoPolaski&theme=outrun">
   </div>
 </div>
