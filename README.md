@@ -13,10 +13,10 @@
 <div align="center">
   <h3>Here are some of my stats:</h3>
   <div>
-    <img src="https://streak-stats.demolab.com?user=BrunoPolaski&locale=en&mode=daily&theme=outrun&hide_border=true&border_radius=25&card_width=400" height="150" alt="Bruno's AWESOME streak graph"  />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&locale=en&hide_title=false&layout=compact&card_width=350&langs_count=6&theme=outrun&hide_border=true&border_radius=25" height="150" alt="Bruno's main languages graph"  />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BrunoPolaski&theme=outrun">
+    <img src="https://streak-stats.demolab.com?user=BrunoPolaski&locale=en&mode=daily&theme=outrun&hide_border=true&border_radius=25&card_width=500" height="150" alt="Bruno's AWESOME streak graph"  />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&locale=en&hide_title=false&layout=compact&card_width=450&langs_count=6&theme=outrun&hide_border=true&border_radius=25" height="150" alt="Bruno's main languages graph"  />
+    <img width="800" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BrunoPolaski&theme=outrun">
   </div>
 </div>
 
- <div align="center"><img src="https://64.media.tumblr.com/2d0af9c90d1b1107313cc20bda01548a/tumblr_outwxnanpp1u79o2lo1_1280.gifv"></div>
+ <div align="center"><img width="800" src="https://64.media.tumblr.com/2d0af9c90d1b1107313cc20bda01548a/tumblr_outwxnanpp1u79o2lo1_1280.gifv"></div>
