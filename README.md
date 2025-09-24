@@ -5,7 +5,7 @@
         <img align="right" width="200" src="https://64.media.tumblr.com/2d0af9c90d1b1107313cc20bda01548a/tumblr_outwxnanpp1u79o2lo1_1280.gifv">
       </kbd>
     </div>
-    <span>Nice to meet you, I'm Bruno!</span>
+    <span>Hey, what's up! I'm Bruno!</span>
   </h2>
   <div align="center">
     <h3>I'm currently a Full-stack Developer using</h3>
