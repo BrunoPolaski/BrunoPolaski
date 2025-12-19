@@ -16,7 +16,7 @@
 <div align="center">
   <h3>Here are some of my stats:</h3>
   <div>
-    <img src="https://streak-stats.demolab.com?user=BrunoPolaski&locale=en&mode=daily&theme=outrun&hide_border=true&border_radius=25&card_width=500" height="150" alt="Bruno's AWESOME streak graph"  />
+    <img src="https://streak-stats.demolab.com?user=BrunoPolaski&theme=outrun&hide_border=true&exclude_days=Sun%2CSat&card_width=500&card_height=170" alt="GitHub Streak" />
     <img src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&locale=en&hide_title=false&layout=compact&card_width=450&langs_count=6&theme=outrun&hide_border=true&border_radius=25" height="150" alt="Bruno's main languages graph"  />
     <img width="800" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BrunoPolaski&theme=outrun">
   </div>
