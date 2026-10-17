@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths:
       - .github/scripts/terminal.py
-      - assets/coding.jpg
+      - assets/coding.gif
 
 permissions:
   contents: write

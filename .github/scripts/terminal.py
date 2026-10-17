@@ -195,7 +195,7 @@ class Terminal:
         photo = ""
         if top < self.photo_height:
             photo = (
-                f'<image href="data:image/jpeg;base64,{background}" width="{w}" height="{self.photo_height}" '
+                f'<image href="data:image/gif;base64,{background}" width="{w}" height="{self.photo_height}" '
                 f'preserveAspectRatio="xMidYMin slice" opacity="0.22" mask="url(#photo)"/>'
             )
         return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{bottom - top}" viewBox="0 {top} {w} {bottom - top}">
@@ -279,7 +279,7 @@ def render(stats):
     term.cut()
     term.space()
     term.cursor()
-    background = base64.b64encode((ASSETS / "coding.jpg").read_bytes()).decode()
+    background = base64.b64encode((ASSETS / "coding.gif").read_bytes()).decode()
     return dict(zip(SLICES, term.slices(background)))
 
 
