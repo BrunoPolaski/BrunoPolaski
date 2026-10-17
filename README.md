@@ -1,8 +1,8 @@
 <div align="center">
   <img width="100%" src="terminal.svg" alt="bruno@github:~$ cat bruno.json" />
   <br />
-  <a href="https://www.linkedin.com/in/bruno-polaski-27a97b255/"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" /></a>
-  <a href="https://brunopolaski.github.io"><img src="https://skillicons.dev/icons?i=github" alt="Portfolio" title="brunopolaski.github.io" /></a>
+  <a href="https://www.linkedin.com/in/bruno-polaski-27a97b255/"><img src="linkedin.svg" alt="LinkedIn" /></a>
+  <a href="https://brunopolaski.github.io"><img src="portfolio.svg" alt="Portfolio" /></a>
 </div>
 
 <div align="center">
