@@ -198,7 +198,7 @@ class Terminal:
                 f'<image href="data:image/gif;base64,{background}" width="{w}" height="{self.photo_height}" '
                 f'preserveAspectRatio="xMidYMin slice" opacity="0.22" mask="url(#photo)"/>'
             )
-        return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{bottom - top}" viewBox="0 {top} {w} {bottom - top}">
+        return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{bottom - top}" viewBox="0 {top} {w} {bottom - top}" preserveAspectRatio="none">
 <style>
 text{{font:15px "Fira Code","JetBrains Mono",Consolas,"DejaVu Sans Mono",monospace;white-space:pre}}
 .k{{fill:#b39cff}} .s{{fill:#9ece6a}} .p{{fill:#c0caf5}} .b{{fill:#ff9e64}} .m{{fill:#8b85a8}}
