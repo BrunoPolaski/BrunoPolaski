@@ -127,7 +127,7 @@ def collect_stats():
 
 
 class Terminal:
-    width, x, line_height, gap = 800, 28, 24, 10
+    width, x, line_height, gap, photo_height = 800, 28, 24, 10, 450
     prompt = [("u", "bruno@github"), ("c", ":"), ("d", "~"), ("c", "$ ")]
 
     def __init__(self):
@@ -192,6 +192,12 @@ class Terminal:
 
     def svg(self, background, top, bottom):
         w, h = self.width, self.y + 28
+        photo = ""
+        if top < self.photo_height:
+            photo = (
+                f'<image href="data:image/jpeg;base64,{background}" width="{w}" height="{self.photo_height}" '
+                f'preserveAspectRatio="xMidYMin slice" opacity="0.22" mask="url(#photo)"/>'
+            )
         return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{bottom - top}" viewBox="0 {top} {w} {bottom - top}">
 <style>
 text{{font:15px "Fira Code","JetBrains Mono",Consolas,"DejaVu Sans Mono",monospace;white-space:pre}}
@@ -206,11 +212,28 @@ text{{font:15px "Fira Code","JetBrains Mono",Consolas,"DejaVu Sans Mono",monospa
 </style>
 <defs>
 <clipPath id="win"><rect width="{w}" height="{h}" rx="12"/></clipPath>
+<linearGradient id="base" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="{h}">
+<stop offset="0" stop-color="#0d0b1a"/><stop offset="0.55" stop-color="#11102a"/><stop offset="1" stop-color="#1c1233"/>
+</linearGradient>
+<radialGradient id="wine" gradientUnits="userSpaceOnUse" cx="{w * 0.82}" cy="{h}" r="460">
+<stop offset="0" stop-color="#783356" stop-opacity="0.45"/><stop offset="1" stop-color="#783356" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="violet" gradientUnits="userSpaceOnUse" cx="{w * 0.12}" cy="{h * 0.72}" r="380">
+<stop offset="0" stop-color="#452460" stop-opacity="0.4"/><stop offset="1" stop-color="#452460" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0.6" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+</linearGradient>
+<mask id="photo"><rect width="{w}" height="{self.photo_height}" fill="url(#fade)"/></mask>
+<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" fill-opacity="0.025"/></pattern>
 {chr(10).join(self.clips)}
 </defs>
 <g clip-path="url(#win)">
-<rect width="{w}" height="{h}" fill="#0d0b1a"/>
-<image href="data:image/jpeg;base64,{background}" width="{w}" height="{h}" preserveAspectRatio="xMidYMid slice" opacity="0.2"/>
+<rect width="{w}" height="{h}" fill="url(#base)"/>
+<rect width="{w}" height="{h}" fill="url(#violet)"/>
+<rect width="{w}" height="{h}" fill="url(#wine)"/>
+{photo}
+<rect width="{w}" height="{h}" fill="url(#scan)"/>
 <rect width="{w}" height="36" fill="#1a1530" fill-opacity="0.9"/>
 <circle cx="22" cy="18" r="6" fill="#ff5f57"/><circle cx="42" cy="18" r="6" fill="#febc2e"/><circle cx="62" cy="18" r="6" fill="#28c840"/>
 <text x="{w / 2}" y="23" text-anchor="middle" style="font-size:13px" fill="#8b85a8">bruno@github: ~</text>
