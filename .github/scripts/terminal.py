@@ -10,6 +10,7 @@ LOGIN = "BrunoPolaski"
 LINKEDIN = "https://www.linkedin.com/in/bruno-polaski-27a97b255"
 PORTFOLIO = "https://brunopolaski.github.io"
 ASSETS = Path(__file__).resolve().parents[2] / "assets"
+SLICES = ["json", "linkedin", "portfolio", "stats", "cursor"]
 
 PROFILE_QUERY = """query($login: String!) {
   user(login: $login) {
@@ -130,7 +131,7 @@ class Terminal:
     prompt = [("u", "bruno@github"), ("c", ":"), ("d", "~"), ("c", "$ ")]
 
     def __init__(self):
-        self.y, self.t, self.body, self.clips = 58, 0.2, [], []
+        self.y, self.t, self.body, self.clips, self.cuts = 58, 0.2, [], [], [0]
 
     @staticmethod
     def spans(parts):
@@ -175,6 +176,9 @@ class Terminal:
             )
         self.reveal(inner)
 
+    def cut(self):
+        self.cuts.append(self.y + 8)
+
     def space(self):
         self.y += self.gap
 
@@ -182,9 +186,13 @@ class Terminal:
         self.y += self.line_height
         self.reveal(f'<text x="{self.x}" y="{self.y}">{self.spans(self.prompt)}<tspan class="k cur">█</tspan></text>')
 
-    def svg(self, gif):
+    def slices(self, background):
+        bounds = self.cuts + [self.y + 28]
+        return [self.svg(background, top, bottom) for top, bottom in zip(bounds, bounds[1:])]
+
+    def svg(self, background, top, bottom):
         w, h = self.width, self.y + 28
-        return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+        return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{bottom - top}" viewBox="0 {top} {w} {bottom - top}">
 <style>
 text{{font:15px "Fira Code","JetBrains Mono",Consolas,"DejaVu Sans Mono",monospace;white-space:pre}}
 .k{{fill:#b39cff}} .s{{fill:#9ece6a}} .p{{fill:#c0caf5}} .b{{fill:#ff9e64}} .m{{fill:#8b85a8}}
@@ -202,7 +210,7 @@ text{{font:15px "Fira Code","JetBrains Mono",Consolas,"DejaVu Sans Mono",monospa
 </defs>
 <g clip-path="url(#win)">
 <rect width="{w}" height="{h}" fill="#0d0b1a"/>
-<image href="data:image/gif;base64,{gif}" width="{w}" height="{h}" preserveAspectRatio="xMidYMid slice" opacity="0.2"/>
+<image href="data:image/jpeg;base64,{background}" width="{w}" height="{h}" preserveAspectRatio="xMidYMid slice" opacity="0.2"/>
 <rect width="{w}" height="36" fill="#1a1530" fill-opacity="0.9"/>
 <circle cx="22" cy="18" r="6" fill="#ff5f57"/><circle cx="42" cy="18" r="6" fill="#febc2e"/><circle cx="62" cy="18" r="6" fill="#28c840"/>
 <text x="{w / 2}" y="23" text-anchor="middle" style="font-size:13px" fill="#8b85a8">bruno@github: ~</text>
@@ -218,12 +226,15 @@ def render(stats):
     term.command("cat bruno.json")
     for parts in JSON_LINES:
         term.line(parts)
+    term.cut()
     term.space()
     term.command("open linkedin")
     term.line([("m", "Opening "), ("d", LINKEDIN)])
+    term.cut()
     term.space()
     term.command("open portfolio")
     term.line([("m", "Opening "), ("d", PORTFOLIO)])
+    term.cut()
     term.space()
     term.command("gh stats")
     term.columns([
@@ -242,11 +253,13 @@ def render(stats):
     languages = stats["languages"]
     for i in range(0, len(languages), 2):
         term.bars(languages[i:i + 2])
+    term.cut()
     term.space()
     term.cursor()
-    gif = base64.b64encode((ASSETS / "coding.gif").read_bytes()).decode()
-    return term.svg(gif)
+    background = base64.b64encode((ASSETS / "coding.jpg").read_bytes()).decode()
+    return dict(zip(SLICES, term.slices(background)))
 
 
 if __name__ == "__main__":
-    (ASSETS / "terminal.svg").write_text(render(collect_stats()))
+    for name, svg in render(collect_stats()).items():
+        (ASSETS / f"terminal-{name}.svg").write_text(svg)

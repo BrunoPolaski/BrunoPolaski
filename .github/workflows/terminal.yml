@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths:
       - .github/scripts/terminal.py
-      - assets/coding.gif
+      - assets/coding.jpg
 
 permissions:
   contents: write
@@ -24,5 +24,5 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/terminal.svg
+          git add assets/terminal-*.svg
           git diff --cached --quiet || { git commit -m "chore: refresh terminal stats" && git push; }
