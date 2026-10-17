@@ -1,4 +1,5 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2D1B69,100:8B6FDC&height=160&section=header&text=Hey,%20I'm%20Bruno!&fontColor=ffffff&fontSize=48&fontAlignY=38&desc=Full-stack%20%26%20mobile%20developer%20%E2%80%A2%20DevOps%20and%20architecture%20enthusiast&descAlignY=60&descSize=16" alt="Hey, I'm Bruno!" />
+<h1 align="center">Hey, I'm Bruno!</h1>
+<p align="center">Full-stack &amp; mobile developer · DevOps and architecture enthusiast</p>
 
 <img align="right" width="220" src="https://64.media.tumblr.com/2d0af9c90d1b1107313cc20bda01548a/tumblr_outwxnanpp1u79o2lo1_1280.gif" alt="" />
 
@@ -12,9 +13,9 @@
 
 ### Stack
 
-<img src="https://skillicons.dev/icons?i=vue,quasar,ts,go,php&theme=dark" alt="Vue, Quasar, TypeScript, Go, PHP" />
+<img src="https://skillicons.dev/icons?i=vue,ts,go,php&theme=dark" alt="Vue, TypeScript, Go, PHP" />
 
-<a href="https://www.linkedin.com/in/bruno-polaski-27a97b255/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/bruno-polaski-27a97b255/"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" /></a>
 
 <br clear="right" />
 
@@ -25,5 +26,3 @@
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&layout=compact&langs_count=6&theme=outrun&hide_border=true&border_radius=12" alt="Most used languages" />
   <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BrunoPolaski&theme=outrun" alt="Profile summary" />
 </div>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2D1B69,100:8B6FDC&height=100&section=footer" alt="" />
