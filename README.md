@@ -5,10 +5,9 @@
   <a href="https://brunopolaski.github.io"><img src="https://skillicons.dev/icons?i=github" alt="Portfolio" title="brunopolaski.github.io" /></a>
 </div>
 
-### Stats
-
 <div align="center">
-  <img height="170" src="https://streak-stats.demolab.com?user=BrunoPolaski&theme=outrun&hide_border=true&exclude_days=Sun%2CSat&border_radius=12" alt="GitHub streak" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=BrunoPolaski&layout=compact&langs_count=6&theme=outrun&hide_border=true&border_radius=12" alt="Most used languages" />
   <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BrunoPolaski&theme=outrun" alt="Profile summary" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=BrunoPolaski&theme=outrun" alt="GitHub stats" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=BrunoPolaski&theme=outrun" alt="Top languages by commit" />
+  <img width="100%" src="https://streak-stats.demolab.com?user=BrunoPolaski&theme=outrun&hide_border=true&exclude_days=Sun%2CSat&card_width=700&card_height=200&border_radius=5" alt="GitHub streak" />
 </div>
